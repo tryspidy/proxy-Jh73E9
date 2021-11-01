@@ -1,0 +1,24 @@
+import request from '@/utils/request';
+
+export function testpass(data) {
+    return request({
+        url: '/passportapi/XXX/XXX',
+        method: 'post',
+        data,
+    })
+}
+
+export function testsupport(data) {
+    return request({
+        url: '/supportapi/XXX/XXX',
+        method: 'post',
+        data,
+    });
+}
+export function testlight(api) {
+    return request({
+        url: `/lightapi/XXX/XXX`,
+        method: 'get',
+    });
+}
+
